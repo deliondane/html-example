@@ -6,18 +6,32 @@
     <title>Video and Audio example</title>
   </head>
   <body>
-    <video src="images/sample.mp4" controls fullscreen toggle type="video/mp4">
-      <p>video</p>
+    <video src="images/sample.mp4" controls autoplay width="100%" type="video/mp4">
+      <p>브라우저가 video를 지원하지 않습니다</p>
     </video>
-    <audio
-      src="images/background.mp3"
-      controls
-      autoplay
-      loop
-      volume="50%"
-      type="audio/mp3"
-    >
-      <p>audio</p>
+
+    <!--
+      <video controls width="100%" autoplay>
+        <source src="images/sample.mp4" type="video/mp4">
+      </video> 
+     -->
+     
+     <audio
+     src="images/background.mp3"
+     controls
+     autoplay
+     loop
+     volume="0.5"
+     type="audio/mp3"
+     >
+     <p>이 브라우저는 audio를 지원하지 않습니다</p>
     </audio>
+    
+        <!--
+          <audio controls autoplay loop voulume="0.5">
+            <source src="images/images.mp3" type="audio/mp3">
+          </audio> 
+         -->
+
   </body>
 </html>
